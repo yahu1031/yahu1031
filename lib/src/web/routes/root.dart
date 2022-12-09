@@ -8,7 +8,7 @@ class RouteRoot extends WidgetRoute {
     )..values = {
         'title': 'Mr.Minnu',
         'name': 'Mr.Minnu',
-        'fullName': 'Yaswanth Kumar(aka Minnu)',
+        'fullName': 'Yaswanth Kumar(Minnu)',
         'avatar':
             'https://cdn.discordapp.com/attachments/756903745241088011/1048659858951516311/3c5c9bc0924ad92d302f93f290d19b60-sticker.png',
         'jobTitle': 'Flutter & Dart Developer',
