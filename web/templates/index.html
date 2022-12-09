@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="icon" type="image/x-icon" href="{{avatar}}">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+</head>
+
+<body>
+  <div class="body">
+    <img class="animoji" src="{{avatar}}">
+    <h1 class="name">{{fullName}}</h1>
+
+    <h3 id="job">{{jobTitle}}</h3>
+    <div id="inline">
+      <a href="{{twitterUrl}}">
+        <div class="innerline">
+          <i class="ti ti-brand-twitter" style="content: 'ec27';color: #1c9bef;"></i>
+          <p id="userid">{{twitterName}}</p>
+        </div>
+      </a>
+      <a href="{{githubUrl}}">
+        <div class="innerline">
+          <i class="ti ti-brand-github" style="content: 'ec1c';"></i>
+          <p id="userid">{{githubName}}</p>
+        </div>
+      </a>
+      <a href="{{linkedinUrl}}">
+        <div class="innerline">
+          <i class="ti ti-brand-linkedin" style="content: 'ec8c';color: #0b65c2;"></i>
+          <p id="userid">{{linkedinName}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="/static/consoleimg.min.js"></script>
+  <script>
+    consoleimg.load('{{qrLink}}', { size: 200 });
+    var mediaQuery = window.matchMedia("(max-width: 600px)");
+    function setName(mediaQuery) {
+      if (mediaQuery.matches) {
+        document.getElementsByClassName("name")[0].innerHTML = '{{name}}';
+      } else {
+        document.getElementsByClassName("name")[0].innerHTML = "{{fullName}}";
+      }
+    }
+    setName(mediaQuery);
+    mediaQuery.addEventListener("change", setName);
+  </script>
+</body>
+
+</html>

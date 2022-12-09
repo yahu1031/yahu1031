@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS reset */
+html {
+    font-family: Lexend Deca, sans-serif;
+}
+
+.name {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#job {
+    font-weight: 400;
+}
+
+.ti{
+    font-size: 35px;
+}
+
+.body {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    top: 50%;
+    background-repeat: no-repeat;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+    #inline {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .name {
+        font-size: 6vw;
+    }
+
+    #job {
+        font-size: 4vw;
+    }
+
+    #userid {
+        font-size: 3vw !important;
+    }
+
+    .ti{
+        font-size: 5vw !important;
+    }
+
+    .animoji{
+        height: 45vw !important;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .name {
+        font-size: 3.4vw;
+    }
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-tabler-brand-twitter {
+    color: #97cef2;
+    width: 50px;
+    height: auto;
+    margin-right: 2px;
+}
+
+.icon-tabler-brand-linkedin {
+    color: #3c72ae;
+    width: 50px;
+    height: auto;
+    margin-right: 2px;
+}
+
+.icon-tabler-brand-github {
+    color: #020202;
+    width: 50px;
+    height: auto;
+    margin-right: 2px;
+}
+
+.animoji {
+    background-color: #bde7ff;
+    border-radius: 50%;
+    height: 200px;
+}
+
+#inline {
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 -25%;
+}
+
+.innerline {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+::-moz-selection {
+    color: white;
+    background: #97cef2;
+}
+
+::selection {
+    color: white;
+    background: #97cef2;
+}
