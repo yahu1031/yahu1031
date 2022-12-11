@@ -56,9 +56,9 @@ jobs:
       - name: Create CodeDeploy Deployment
         id: deploy
         env:
-          PROJECT_NAME: minnu
-          AWS_NAME: minnu
-          DEPLOYMENT_BUCKET: minnu-deployment-3238504
+          PROJECT_NAME: port
+          AWS_NAME: port
+          DEPLOYMENT_BUCKET: port-deployment-6453999
           TARGET: ${{ github.event.inputs.target }}
         run: |
           # Deploy server to AWS
