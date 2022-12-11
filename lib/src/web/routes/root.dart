@@ -19,7 +19,7 @@ class RouteRoot extends WidgetRoute {
         'githubUrl': 'https://github.com/yahu1031',
         'linkedinUrl': 'https://www.linkedin.com/in/minnu-1031/',
         'email': 'hi2minnu@gmail.com',
-        'qrLink': 'https://i.imgur.com/cUehcdR.png',
+        'qrLink': 'https://i.imgur.com/GQTV9Va.png',
       };
   }
 }

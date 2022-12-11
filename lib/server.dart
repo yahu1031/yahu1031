@@ -1,8 +1,9 @@
 import 'package:serverpod/serverpod.dart';
 
-import 'src/generated/endpoints.dart';
+import 'package:yahu1031/src/web/routes/root.dart';
+
 import 'src/generated/protocol.dart';
-import 'src/web/routes/root.dart';
+import 'src/generated/endpoints.dart';
 
 // This is the starting point of your Serverpod server. In most cases, you will
 // only need to make additions to this file if you add future calls,  are
@@ -21,9 +22,12 @@ void run(List<String> args) async {
 
   // Setup a default page at the web root.
   pod.webServer.addRoute(RouteRoot(), '/');
+  pod.webServer.addRoute(RouteRoot(), '/index.html');
   // Serve all files in the /static directory.
-  pod.webServer
-      .addRoute(RouteStaticDirectory(serverDirectory: 'static'), '/static/*');
+  pod.webServer.addRoute(
+    RouteStaticDirectory(serverDirectory: 'static', basePath: '/'),
+    '/*',
+  );
 
   // Start the server.
   await pod.start();

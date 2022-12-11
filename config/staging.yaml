@@ -11,27 +11,27 @@
 # Configuration for the main API server.
 apiServer:
   port: 8080
-  publicHost: api-staging.minnu.info
+  publicHost: api-staging.himinnu.com
   publicPort: 443
   publicScheme: https
 
 # Configuration for the Insights server.
 insightsServer:
   port: 8081
-  publicHost: insights-staging.minnu.info
+  publicHost: insights-staging.himinnu.com
   publicPort: 443
   publicScheme: https
 
 # Configuration for the web server.
 webServer:
   port: 8082
-  publicHost: app-staging.minnu.info
+  publicHost: app-staging.himinnu.com
   publicPort: 443
   publicScheme: https
 
 # This is the database setup for your servers.
 database:
-  host: database-staging.minnu.info
+  host: database-staging.himinnu.com
   port: 5432
   name: serverpod
   user: postgres
@@ -39,5 +39,5 @@ database:
 # This is the setup for Redis.
 redis:
   enabled: false
-  host: redis-staging.minnu.info
+  host: redis-staging.himinnu.com
   port: 6379

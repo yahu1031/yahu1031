@@ -31,7 +31,7 @@ webServer:
 database:
   host: localhost
   port: 8090
-  name: minnu
+  name: port
   user: postgres
 
 # This is the setup for Redis.

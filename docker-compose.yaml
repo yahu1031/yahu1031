@@ -7,16 +7,16 @@ services:
       - '8090:5432'
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_DB: minnu
-      POSTGRES_PASSWORD: "NZnQ4I_GXWxHgGvu5IiA9I-2ABtoQ1CI"
+      POSTGRES_DB: port
+      POSTGRES_PASSWORD: "W9eCMtPHYbYnlc08256m12PbjVUFWmjr"
     volumes:
-      - minnu_data:/var/lib/postgresql/data
+      - port_data:/var/lib/postgresql/data
   redis:
     image: redis:6.2.6
     ports:
       - '8091:6379'
-    command: redis-server --requirepass "oDAzIZSUuWdhbRKp8rh7_TgvxNFXimHD"
+    command: redis-server --requirepass "l5z5gTsqLkgmM2Tv3vftIQb68I72ULjA"
     environment:
       - REDIS_REPLICATION_MODE=master
 volumes:
-  minnu_data:
+  port_data:
